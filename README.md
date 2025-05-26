@@ -13,7 +13,7 @@ This boilerplate provides a clean, minimal setup to jumpstart development using:
 
 Table of contents:
 
-1. [🛠 Software Needed](#-1-getting-started)
+1. [🛠 Software Needed](#%EF%B8%8F-1--software-needed)
 2. [☁️ Setting up the Google Cloud Platform Infrastructure](#-1-getting-started)
 3. [🏠 Setting up Locally](#-1-getting-started)
 4. [🔗 Links](#-6-links)
