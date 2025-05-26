@@ -13,16 +13,70 @@ This boilerplate provides a clean, minimal setup to jumpstart development using:
 
 Table of contents:
 
-1. [🛠 Software Needed](#%EF%B8%8F-1--software-needed)
-2. [☁️ Setting up the Google Cloud Platform Infrastructure](#%EF%B8%8F-2-setting-up-the-google-cloud-platform-infrastructure)
-3. [🏠 Setting up Locally](#-3-setting-up-locally)
-4. [🔗 Links](#-4-links)
-5. [📜 License](#-5-license)
+1. [🎯 Applications](#-4-links)
+2. [💻 Software Needed](#%EF%B8%8F-1--software-needed)
+3. [🔗 Links](#-4-links)
+4. [📜 License](#-5-license)
 
 
 ---
 
-## ☁️ 1 🛠 Software Needed
+
+## 🎯 1 Applications
+
+### 🔐 [Encrypt and Decrypt PDF Function](encrypt-and-decrypt-pdf-function)
+
+* **Runs on:** Google Cloud Run Functions
+* **GCP Services:**
+  * Runs on: Cloud Run Function
+  * Secrets: Secret Manager 
+ 
+* **Description:**
+  PDF documents are stored in a Google Cloud Bucket named **originals**. 
+  The documents there are encrypted into a directory named **encrypted**.
+  When they are decrypted they are stored in a directory named **decrypted**.
+  
+
+### 🧑‍💻 [Python User System Flask App (Backend) with PostgreSQL](user-system)
+
+* **Runs on:** Google Cloud Run
+* **GCP Services:**
+  * Runs on: Cloud Run Functions
+  * Database: Cloud SQL (PostgreSQL)
+  * Secrets: Secret Manager
+
+* **Description:**
+  A basic user management system that handles sign-up, login, password hashing, 
+  and user sessions using Flask and PostgreSQL. 
+  
+  Secret Manager securely stores database credentials, 
+  and the service is deployed on Cloud Run with auto-scaling. 
+
+  The project introduces secure cloud architecture, relational database access, 
+  and containerized deployment.
+  
+
+
+### 🤖 [Dream Analyzer with AI](dream-analyzer-with-ai)
+
+* Runs on: Google Cloud Run
+* GCP Services: 
+  * AI: Vertex AI (text analysis & summarization)
+  * Runs on: Cloud Run 
+  * Database: Cloud SQL (PostgreSQL)
+  * Secrets: Secret Manager
+  
+* Description:
+  A creative app where users input of dreams, and receive an AI-generated analysis including emotional tone, 
+symbolic interpretation, and possible real-life correlations. 
+
+Vertex AI processes and interprets dream text. 
+
+The app demonstrates LLM integration, natural language processing, and secure deployment of an AI-powered API.
+
+---
+
+## 💻 2 Software Needed
 
 Please install the following software:
 
@@ -31,7 +85,6 @@ Please install the following software:
 * [PyCharm](https://www.jetbrains.com/pycharm/download) – A powerful IDE for Python development. 
 It provides features like smart code completion, debugging, and project management.
 
-
 * [PostgreSQL](https://www.postgresql.org/download) – The relational database used to store and manage data.
 Note: On **Mac and Linux**, you also need to install pgAdmin, a GUI for managing your PostgreSQL databases.
 (*pgAdmin is already included in the Windows PostgreSQL installer.*)
@@ -39,27 +92,12 @@ Note: On **Mac and Linux**, you also need to install pgAdmin, a GUI for managing
 * [Git](https://git-scm.com/downloads) – A version control system used to manage and collaborate on your codebase. 
 Essential for cloning the repo and contributing to the project.
 
----
-
-## ☁️ 2 Setting up the Google Cloud Platform Infrastructure
-
 
 ---
 
-## 🏠 3 Setting up Locally
 
 
-
-![Download](_docs/download_24dp_2854C5_FILL0_wght400_GRAD0_opsz24.png) [Download ZIP](https://github.com/ditlef9/python-nextjs-postgresql-devsecops-gcp/archive/refs/heads/main.zip) of the course material
-or use Git and clone the material:
-```bash
-git clone https://github.com/ditlef9/python-nextjs-postgresql-devsecops-gcp.git
-```
-
-
----
-
-## 🔗 4 Links
+## 🔗 3 Links
 
 [Google Cloud Platform Docs](https://cloud.google.com/docs) –  
 Official documentation for Google Cloud Platform. Learn how to deploy, secure, and manage applications using GCP services like Cloud Run, IAM, Cloud Functions, and more.
@@ -76,7 +114,7 @@ Documentation for GitHub Actions, GitHub’s built-in CI/CD system. Learn how to
 
 ---
 
-## 📜 5 License
+## 📜 4 License
 
 
 This project is licensed under the
