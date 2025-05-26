@@ -3,11 +3,11 @@
 This project shows how you can use **PostgreSQL** in
 **Python** on the **Google Cloud Platform** and **locally**.
 
-This boilerplate provides a clean, minimal setup to jumpstart development using:
+In this repository we have three projects:
 
-- **Python (FastAPI / Flask)** for backend logic
-- **PostgreSQL** as the primary relational database
-- **Google Cloud Platform (GCP)** for cloud deployment (Cloud Run, Cloud SQL and Secret Manager)
+- **🔐 Encrypt and Decrypt PDF Function** with Buckets.
+- **🧑‍💻 Python User System Flask App (Backend) with PostgreSQL** lets users register and login to a backend.
+- **🤖 Dream Analyzer with AI** analyzes dreams. 
 
 ---
 
@@ -62,8 +62,7 @@ Table of contents:
 * Runs on: Google Cloud Run
 * GCP Services: 
   * AI: Vertex AI (text analysis & summarization)
-  * Runs on: Cloud Run 
-  * Database: Cloud SQL (PostgreSQL)
+  * Runs on: Cloud Run
   * Secrets: Secret Manager
   
 * Description:
