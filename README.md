@@ -1,4 +1,4 @@
-![Python, PostgreSQL on Google Cloud Platform Logo](_docs/python-postgresql-google-cloud-platform-logo.png) 
+![Python, PostgreSQL on Google Cloud Platform Logo](_docs/python-postgresql-ai-google-cloud-platform-logo.png) 
 
 This project shows how you can use **PostgreSQL** in
 **Python** on the **Google Cloud Platform** and **locally**.
