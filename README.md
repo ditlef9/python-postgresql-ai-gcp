@@ -14,10 +14,10 @@ This boilerplate provides a clean, minimal setup to jumpstart development using:
 Table of contents:
 
 1. [🛠 Software Needed](#%EF%B8%8F-1--software-needed)
-2. [☁️ Setting up the Google Cloud Platform Infrastructure](#-1-getting-started)
-3. [🏠 Setting up Locally](#-1-getting-started)
-4. [🔗 Links](#-6-links)
-5. [📜 License](#-7-license)
+2. [☁️ Setting up the Google Cloud Platform Infrastructure](#%EF%B8%8F-2-setting-up-the-google-cloud-platform-infrastructure)
+3. [🏠 Setting up Locally](#-3-setting-up-locally)
+4. [🔗 Links](#-4-links)
+5. [📜 License](#-5-license)
 
 
 ---
@@ -26,17 +26,17 @@ Table of contents:
 
 Please install the following software:
 
-* [Python](https://www.python.org/downloads) - The core programming language used in this project. 
+* [Python](https://www.python.org/downloads) – The core programming language used in this project. 
 
-* [PyCharm](https://www.jetbrains.com/pycharm/download) - A powerful IDE for Python development. 
+* [PyCharm](https://www.jetbrains.com/pycharm/download) – A powerful IDE for Python development. 
 It provides features like smart code completion, debugging, and project management.
 
 
-* [PostgreSQL](https://www.postgresql.org/download) - The relational database used to store and manage data.
+* [PostgreSQL](https://www.postgresql.org/download) – The relational database used to store and manage data.
 Note: On **Mac and Linux**, you also need to install pgAdmin, a GUI for managing your PostgreSQL databases.
 (*pgAdmin is already included in the Windows PostgreSQL installer.*)
 
-* [Git](https://git-scm.com/downloads) - – A version control system used to manage and collaborate on your codebase. 
+* [Git](https://git-scm.com/downloads) – A version control system used to manage and collaborate on your codebase. 
 Essential for cloning the repo and contributing to the project.
 
 ---
