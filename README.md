@@ -13,10 +13,10 @@ In this repository we have three projects:
 
 Table of contents:
 
-1. [🎯 Applications](#-4-links)
-2. [💻 Software Needed](#%EF%B8%8F-1--software-needed)
-3. [🔗 Links](#-4-links)
-4. [📜 License](#-5-license)
+1. [🎯 Applications](#-1-applications)
+2. [💻 Software Needed](#-2-software-needed)
+3. [🔗 Links](#-3-links)
+4. [📜 License](#-4-license)
 
 
 ---
@@ -97,6 +97,12 @@ Essential for cloning the repo and contributing to the project.
 
 
 ## 🔗 3 Links
+
+[Python, Next.js, PostgreSQL and DevSecOps on Google Cloud Platform with Projects from Real Industry](https://github.com/ditlef9/python-nextjs-postgresql-devsecops-gcp) –  
+Create six applications with this repository.
+There is also an 
+[Udemy Course](https://www.udemy.com/course/python-nextjs-postgresql-and-devsecops-on-google-cloud/?referralCode=FC37116C22B35FA1A907).
+
 
 [Google Cloud Platform Docs](https://cloud.google.com/docs) –  
 Official documentation for Google Cloud Platform. Learn how to deploy, secure, and manage applications using GCP services like Cloud Run, IAM, Cloud Functions, and more.
