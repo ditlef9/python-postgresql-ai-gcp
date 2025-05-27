@@ -1,4 +1,4 @@
-![Python, PostgreSQL on Google Cloud Platform Logo](_docs/python-postgresql-ai-google-cloud-platform-logo.png) 
+![Python, AI, ML, PostgreSQL, Firestore on Google Cloud Platform Logo](_docs/python-ai-ml-postgreql-firestore-on-google-cloud-platform-logo.png) 
 
 This project shows how you can use **PostgreSQL** in
 **Python** on the **Google Cloud Platform** and **locally**.
@@ -69,14 +69,14 @@ Table of contents:
   This app helps users write a daily mood journal and receive an AI-generated reflection or suggestion, 
   like “You seem anxious lately. Would taking a walk or journaling more help?”
 
-  How it works:
-    * User submits a short daily entry (text: how they feel, what happened).
-    * Python backend sends this to Vertex AI via prompt, asking for:
-      * Mood summary
-      * Emotional trends
-      * A gentle reflection or suggestion
+How it works:
+  * User submits a short daily entry (text: how they feel, what happened).
+  * Python backend sends this to Vertex AI via prompt, asking for:
+    * Mood summary
+    * Emotional trends
+    * A gentle reflection or suggestion
 
-    * Stores the entry + AI feedback in Firestore.
+  * Stores the entry + AI feedback in Firestore.
 
 ### 🧬 [Lifestyle-Based Health Risk Scoring System Machine Learning](lifestyle-based-health-risk-scoring-system-ml)
 
@@ -93,19 +93,19 @@ Table of contents:
   This app takes structured input and outputs a personalized health risk score.
 
 
-  How it works:
-    * User fills in a form (or uploads a JSON) with:
-      * Blood test results (e.g. cholesterol, liver enzymes)
-      * Lifestyle: exercise frequency, smoking, stress levels, diet
-      * Exposures: radiation, environmental toxins, steroids, pharma
-      * Nutrition: vitamins, minerals, amino acids
-      * Subjective metrics: peace of mind, etc.
+How it works:
+  * User fills in a form (or uploads a JSON) with:
+    * Blood test results (e.g. cholesterol, liver enzymes)
+    * Lifestyle: exercise frequency, smoking, stress levels, diet
+    * Exposures: radiation, environmental toxins, steroids, pharma
+    * Nutrition: vitamins, minerals, amino acids
+    * Subjective metrics: peace of mind, etc.
 
-    * App runs a custom trained ML model to:
-      * Predict a general health risk score (e.g., 0–100)
-      * Optionally suggest which categories are most contributing to risk (feature importance)
+  * App runs a custom trained ML model to:
+    * Predict a general health risk score (e.g., 0–100)
+    * Optionally suggest which categories are most contributing to risk (feature importance)
 
-    * Results stored in Firestore and shown via API.
+  * Results stored in Firestore and shown via API.
 
 ---
 
