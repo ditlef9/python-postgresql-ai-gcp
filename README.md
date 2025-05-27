@@ -7,7 +7,8 @@ In this repository we have three projects:
 
 - **🔐 Encrypt and Decrypt PDF Function** with Buckets.
 - **🧑‍💻 Python User System Flask App (Backend) with PostgreSQL** lets users register and login to a backend.
-- **🤖 Dream Analyzer with AI** analyzes dreams. 
+- **🤖 Mental Health Check-In Assistant with AI** 
+- **🧬 Lifestyle-Based Health Risk Scoring System Machine Learning** 
 
 ---
 
@@ -77,7 +78,7 @@ Table of contents:
 
     * Stores the entry + AI feedback in Firestore.
 
-### ? [Lifestyle-Based Health Risk Scoring System Machine Learning](??-ml)
+### 🧬 [Lifestyle-Based Health Risk Scoring System Machine Learning](lifestyle-based-health-risk-scoring-system-ml)
 
 * Runs on: Google Cloud Run
 * GCP Services:
@@ -87,7 +88,9 @@ Table of contents:
   * Trained Scikit-learn model or TensorFlow Lite model
 
 * Description:
-  Many people get blood tests and have health habits (like smoking, exercise, etc.), but don’t know how all their lifestyle and environmental factors add up to influence their overall health risk. This app takes structured input and outputs a personalized health risk score.
+  Many people get blood tests and have health habits (like smoking, exercise, etc.), 
+  but don’t know how all their lifestyle and environmental factors add up to influence their overall health risk. 
+  This app takes structured input and outputs a personalized health risk score.
 
 
   How it works:
