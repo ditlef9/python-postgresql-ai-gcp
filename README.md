@@ -24,12 +24,11 @@ Table of contents:
 
 ## 🎯 1 Applications
 
-### 🔐 [Encrypt and Decrypt PDF Function](encrypt-and-decrypt-pdf-function)
+### 🔐 [Encrypt and Decrypt PDFs Function](encrypt-and-decrypt-pdfs)
 
 * **Runs on:** Google Cloud Run Functions
 * **GCP Services:**
-  * Runs on: Cloud Run Function
-  * Secrets: Secret Manager 
+  * Secret Manager 
  
 * **Description:**
   PDF documents are stored in a Google Cloud Bucket named **originals**. 
@@ -41,9 +40,8 @@ Table of contents:
 
 * **Runs on:** Google Cloud Run
 * **GCP Services:**
-  * Runs on: Cloud Run Functions
-  * Database: Cloud SQL (PostgreSQL)
-  * Secrets: Secret Manager
+  * Cloud SQL (PostgreSQL)
+  * Secret Manager
 
 * **Description:**
   A basic user management system that handles sign-up, login, password hashing, 
@@ -57,21 +55,54 @@ Table of contents:
   
 
 
-### 🤖 [Dream Analyzer with AI](dream-analyzer-with-ai)
+### 🤖 [Mental Health Check-In Assistant with AI](mental-health-check-in-assistant-with-ai)
 
 * Runs on: Google Cloud Run
 * GCP Services: 
-  * AI: Vertex AI (text analysis & summarization)
-  * Runs on: Cloud Run
-  * Secrets: Secret Manager
+  * Vertex AI (LLM: PaLM/Gemini)
+  * Secret Manager
+  * Firestore (for storing journal entries)
   
 * Description:
-  A creative app where users input of dreams, and receive an AI-generated analysis including emotional tone, 
-symbolic interpretation, and possible real-life correlations. 
+  Many people struggle to reflect on their mental health or spot patterns. 
+  This app helps users write a daily mood journal and receive an AI-generated reflection or suggestion, 
+  like “You seem anxious lately. Would taking a walk or journaling more help?”
 
-Vertex AI processes and interprets dream text. 
+  How it works:
+    * User submits a short daily entry (text: how they feel, what happened).
+    * Python backend sends this to Vertex AI via prompt, asking for:
+      * Mood summary
+      * Emotional trends
+      * A gentle reflection or suggestion
 
-The app demonstrates LLM integration, natural language processing, and secure deployment of an AI-powered API.
+    * Stores the entry + AI feedback in Firestore.
+
+### ? [Lifestyle-Based Health Risk Scoring System Machine Learning](??-ml)
+
+* Runs on: Google Cloud Run
+* GCP Services:
+  * Cloud Storage (for uploading or accessing test documents/data)
+  * Firestore
+  * Secret Manager 
+  * Trained Scikit-learn model or TensorFlow Lite model
+
+* Description:
+  Many people get blood tests and have health habits (like smoking, exercise, etc.), but don’t know how all their lifestyle and environmental factors add up to influence their overall health risk. This app takes structured input and outputs a personalized health risk score.
+
+
+  How it works:
+    * User fills in a form (or uploads a JSON) with:
+      * Blood test results (e.g. cholesterol, liver enzymes)
+      * Lifestyle: exercise frequency, smoking, stress levels, diet
+      * Exposures: radiation, environmental toxins, steroids, pharma
+      * Nutrition: vitamins, minerals, amino acids
+      * Subjective metrics: peace of mind, etc.
+
+    * App runs a custom trained ML model to:
+      * Predict a general health risk score (e.g., 0–100)
+      * Optionally suggest which categories are most contributing to risk (feature importance)
+
+    * Results stored in Firestore and shown via API.
 
 ---
 
